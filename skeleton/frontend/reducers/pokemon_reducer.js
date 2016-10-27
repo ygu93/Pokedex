@@ -11,6 +11,7 @@ const PokemonReducer = (state = {}, action) => {
       });
       return newState;
     case RECEIVE_NEW_POKEMON:
+    
 
     default:
       return state;
