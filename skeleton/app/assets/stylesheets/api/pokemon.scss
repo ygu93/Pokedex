@@ -182,6 +182,14 @@ $gry: #a5a5a5;
     transform: rotate(360deg);
   }
 }
+#loading-container{
+	top:-1px;
+	height:100%;
+	width:100%;
+	background: black;
+	z-index: 100;
+	position:absolute;
+}
 #loading {
   height: 48px;
   width: 264px;
@@ -189,7 +197,6 @@ $gry: #a5a5a5;
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
-	z-index: 100
 }
 .pokeball {
   width: 4px;
