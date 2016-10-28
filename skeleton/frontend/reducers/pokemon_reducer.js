@@ -11,8 +11,10 @@ const PokemonReducer = (state = {}, action) => {
       });
       return newState;
     case RECEIVE_NEW_POKEMON:
-    
-
+      let newPokemon = action.pokemon;
+      let dup = merge({}, state);
+      dup[newPokemon.id] = newPokemon;
+      return dup;
     default:
       return state;
   }

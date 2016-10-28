@@ -8,7 +8,7 @@ class PokemonIndexItem extends React.Component{
       <li
         className="pokemon-index-item"
         onClick={handleClick(`/pokemon/${this.props.pokemon.id}`)}>
-        <h2>{this.props.pokemon.name} <img src={this.props.pokemon.image_url} /></h2> 
+        {this.props.pokemon.name} <img src={this.props.pokemon.image_url} />
       </li>
     );
   }

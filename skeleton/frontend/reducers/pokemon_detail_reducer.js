@@ -1,8 +1,17 @@
 import { RECEIVE_POKEMON } from '../actions/pokemon_action';
 import merge from 'lodash/merge';
 
+const _defaultPokemon = {
+  name: "",
+  defense: "",
+  attack: "",
+  moves: [],
+  items: ["", "", ""],
+  poke_type: ""
+};
 
-const PokemonDetailReducer = (state = {}, action) => {
+
+const PokemonDetailReducer = (state = _defaultPokemon, action) => {
   Object.freeze(state);
   let newState = {};
   switch(action.type) {

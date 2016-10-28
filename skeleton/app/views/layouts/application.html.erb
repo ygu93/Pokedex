@@ -5,12 +5,21 @@
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
+  <script>
+    window.POKEMON_TYPES = <%=raw Pokemon::TYPES %>
+  </script>
 </head>
 <body>
 
 <header>
   <img src="./assets/pokedex-header.png" alt="pokedex">
-  <div></div>
+  <div>
+    <nav>
+      <ul>
+        <li> <a href="/">Home</a></li>
+      </ul>
+    </nav>
+  </div>
 </header>
 
 

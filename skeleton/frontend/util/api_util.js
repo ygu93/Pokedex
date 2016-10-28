@@ -16,10 +16,11 @@ export const fetchPokemon = (id, success, error) => {
   });
 };
 
-export const createPokemon = (success, error) => {
+export const createPokemon = (pokemon, success, error) => {
   $.ajax({
     method: 'POST',
     url: "api/pokemon",
+    data: {pokemon},
     success,
     error
   });
